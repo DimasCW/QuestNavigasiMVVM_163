@@ -47,6 +47,13 @@ fun TampilanMahasiswaView(
             isinya = mhs.alamat
         )
 
+        Button(
+            onClick = onBackClick,
+            modifier = Modifier.fillMaxWidth().padding(top = 16.dp)
+        ) {
+            Text("Kembali")
+        }
+
     }
 }
 
