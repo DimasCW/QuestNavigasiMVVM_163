@@ -51,7 +51,8 @@ fun Navigasi(
           }
           composable(route = Halaman.Data.name){
               TampilanMahasiswaView(
-                  mhs = uiState
+                  mhs = uiState,
+                  onBackClick = { navHost.popBackStack() }
               )
           }
 
