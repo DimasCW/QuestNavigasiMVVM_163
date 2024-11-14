@@ -63,6 +63,18 @@ fun FormulirView(modifier: Modifier = Modifier,
             }
         )
 
+        TextField(
+            value = nim,
+            onValueChange = { nim = it },
+            modifier = Modifier
+                .fillMaxWidth()
+                .padding(5.dp),
+            label = { Text("Nim") },
+            placeholder = {
+                Text("Masukkan Nim Anda", color = Color.Gray)
+            }
+        )
+
 
         // Row untuk pilihan jenis kelamin menggunakan RadioButton
         Row {
