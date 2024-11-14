@@ -26,11 +26,12 @@ fun FormulirView(modifier: Modifier = Modifier,
 ) {
     // Variabel untuk menyimpan data input pengguna
     var nama by remember { mutableStateOf("") }
+    var nim by remember { mutableStateOf("") }
     var email by remember { mutableStateOf("") }
     var nomorHp by remember { mutableStateOf("") }
     var alamat by remember { mutableStateOf("") }
     var jenisK by remember { mutableStateOf("") }
-    var listData : MutableList<String> = mutableListOf(nama,jenisK, alamat)
+    var listData : MutableList<String> = mutableListOf(nama,nim,email, nomorHp,jenisK, alamat)
 
     // Kolom utama untuk seluruh layout
     Column(
