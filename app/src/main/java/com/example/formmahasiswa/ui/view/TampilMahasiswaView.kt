@@ -18,7 +18,8 @@ import com.example.formmahasiswa.model.Mahasiswa
 
 @Composable
 fun TampilanMahasiswaView(
-    mhs: Mahasiswa
+    mhs: Mahasiswa,
+    onBackClick: () -> Unit
 ){
     Column (modifier = Modifier.padding().fillMaxSize()){
         TampilData(
